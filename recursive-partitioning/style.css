@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partition {
+  background-color: #ccc;
+  border: 1px solid #ddd;
+  margin: 5px;
+  padding: 10px;
+  position: relative; 
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partition .button-container {
+  position: absolute;
+  
+}
+.button {
+  padding: 5px;
+  margin: 2px;
+  cursor: pointer;
+}

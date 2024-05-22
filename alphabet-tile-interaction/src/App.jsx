@@ -1,4 +1,3 @@
-
 import {useState} from "react";
 function App() {
     const [selectedLetters, setSelectedLetters] = useState([]);
@@ -7,6 +6,7 @@ function App() {
     const handleClick = (letter) => {
         const newSelectedLetters = [...selectedLetters];
         // Handle consecutive letter replacement with "_"
+        console.log(newSelectedLetters.length)
         if (newSelectedLetters.length > 1) {
             const lastThree = newSelectedLetters.slice(-3);
 
@@ -25,7 +25,6 @@ function App() {
         newSelectedLetters.push(letter);
         setOutputString(newSelectedLetters.join(''));
         setSelectedLetters(newSelectedLetters);
-
     };
   return (
     <>
